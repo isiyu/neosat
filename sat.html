@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Fly to a location based on scroll position</title>
+<title>Observing Ourselves</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
 <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
@@ -42,6 +42,18 @@
 
 <div id="map"></div>
 <div id="features">
+        <section id="earth" class="active">
+        <h3>Observing Ourselves</h3>
+        <p>
+            This is a map of the Earth. Maps have come a long way and are invaluable
+            from telling us where we are and where we are going. Satellite maps can 
+            show us not just the location of things in the world but also how we 
+            relate to and impact them. 
+        </p>
+        <p>
+            Scroll down on the left take a look around. 
+        </p>
+    </section>
     <section id="observatory" class="active">
         <h3>Arecibo Observatory</h3>
         <p>
@@ -146,19 +158,24 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/satellite-streets-v11',
-        center: [-66.752903, 18.34417],
-        zoom: 15,
-        bearing: 60,
-        pitch: 45
+        center: [0, 0],
+        zoom: 1,
+        bearing: 0,
+        pitch: 0
     });
 
     var chapters = {
+        'earth': {
+            center: [0, 0],
+            zoom: 1,
+            speed: 1
+        },
         'observatory': {
             bearing: 60,
             center: [-66.752903, 18.34417],
             zoom: 15,
             speed: 1,
-            pitch: 20
+            pitch: 35
         },
         'meteor-crater': {
             bearing: 90,
@@ -169,7 +186,7 @@
         'brukkaros-mountain': {
             bearing: 45,
             center: [17.781389, -25.867222],
-            zoom: 12,
+            zoom: 11,
             pitch: 20,
             speed: 1,
             speed: 1
@@ -180,7 +197,8 @@
             bearing: 0,
             zoom: 10,
             speed: 1,
-            pitch: 0
+            pitch: 45,
+            bearing: -45
         },
         'elwha-dam': {
             center: [-123.556690, 48.094970],
