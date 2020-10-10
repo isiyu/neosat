@@ -69,6 +69,24 @@
             towards ourselves. 
         </p>
     </section>
+        <section id="namibia-angola">
+        <h3>Vegetation border between Namibia and Angola.</h3>
+        <p>
+            Political borders made visibile. While country borders are man made and 
+            largely don't show up in satellite imagery. The visible contrast North and
+            South of the border reflects land-use policies on either side. Namibia's farming
+            and livestock grazing makes the differences in ecology visible from space.
+            Straight borders between nations like this one are a remnant of colonial occupation
+            in southwest Africa.   
+        </p>
+    </section>
+    </section>
+        <section id="noor-3">
+        <h3>Noor 3</h3>
+        <p>
+            Noor 3 is the third part of the Ouarzazate Solar Power Station located in Morocco. Commissioned in March 2018, it has a capacity of 150 Megawatts. The solar field has 7400 of such mirrors. 
+        </p>
+    </section>
     <section id="meteor-crater">
         <h3>Meteor Crater</h3>
         <p>
@@ -120,30 +138,27 @@
     <section id="california">
         <h3>California</h3>
         <p>
-            Below is a time lapse of the 2020 California wildfires. Captured by 
-            GOES-west sattelite operated by the United States' National Oceanic 
-            and Atmospheric Administration (NOAA)'s which supports supports weather 
+            Below is a time lapse of the 2020 California wildfires captured by 
+            GOES-West satellite. GOES-West is operated by the United States' National Oceanic 
+            and Atmospheric Administration (NOAA) which supports supports weather 
             forecasting, severe storm tracking, and meteorology research. NOAA is one 
             of the many government organizations that has been neglected in leadership
-            and funding under the current administration. 
+            and funding under the current Administration. 
 
             <video width="640" height="480" controls>
                   <source src="20200908_pacnwfires-hires.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-
-            [to be captured]
-            https://rammb-slider.cira.colostate.edu/?sat=goes-16&z=0&im=12&ts=1&st=0&et=0&speed=130&motion=loop&map=1&lat=0&opacity%5B0%5D=1&hidden%5B0%5D=0&pause=0&slider=-1&hide_controls=0&mouse_draw=0&follow_feature=0&follow_hide=0&s=rammb-slider&sec=full_disk&p%5B0%5D=geocolor&x=10848&y=10848
         </P>
         <p>
-            Meanwhile, with the future of the Earth feeling precarious, two of the wealthiest men 
-            on Earth desperately tring to get off the planet begin colonizing space. With the 
-            first commercial trips to space costing 10s of millions of dollars, one wonders who
-            space colonization will ultimately be accessible to. 
+            Meanwhile, with the future of the Earth's habitability feeling precarious, two of 
+            the wealthiest men on Earth are desperately trying to get off the planet and begin 
+            colonizing Mars. With the first commercial trips to space costing 10s of millions 
+            of dollars, one wonders who space colonization will ultimately be accessible to. 
         </P>
         <p>
             Colonization isn't the only path space exploration offers. By turning the satellites 
-            towards the Earth, we can see there is so much more to know about it, and how we can be 
+            towards ourselves, we can see there is so much more to know about it, and how we can be 
             better stewards of it.  
         </p>
         <p> .</p><p>. </p><p> .</p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p> </p>
@@ -151,12 +166,6 @@
         <p> .</p><p>. </p><p> .</p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p> </p>
         <p> .</p><p>. </p><p> .</p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p> </p>
         <p> .</p><p>. </p><p> .</p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p>. </p><p> </p>
-        <small id="citation">
-            Adapted from
-            <a href="http://www.gutenberg.org/files/2346/2346-h/2346-h.htm"
-                >Project Gutenberg</a
-            >
-        </small>
     </section>
 </div>
 <script>
@@ -174,49 +183,65 @@
         'earth': {
             center: [0, 0],
             zoom: 1,
-            speed: 1
+            speed: 1.5,
+            pitch: 0,
+            bearing: 0
         },
         'observatory': {
-            bearing: 60,
             center: [-66.752903, 18.34417],
             zoom: 15,
-            speed: 1,
-            pitch: 35
+            speed: 1.5,
+            pitch: 35,
+            bearing: 60
+        },
+        'namibia-angola': {
+            bearing: 90,
+            center: [14.489, -17.39536],
+            speed: 1.5,
+            zoom: 12,
+            pitch: 0,
+            bearing: 0
         },
         'meteor-crater': {
             bearing: 90,
             center: [-111.022500, 35.027222],
-            speed: 1,
-            zoom: 14
+            speed: 1.5,
+            zoom: 14,
+            pitch: 0,
+            bearing: 0
         },
         'brukkaros-mountain': {
             bearing: 45,
             center: [17.781389, -25.867222],
             zoom: 11,
             pitch: 20,
-            speed: 1,
-            speed: 1
+            speed: 2,
+            pitch: 0,
+            bearing: 0
         },
         'han-river': {
             duration: 3000,
             center: [116.656, 23.3155],
             bearing: 0,
             zoom: 10,
-            speed: 1,
+            speed: 2,
             pitch: 45,
             bearing: -45
         },
         'elwha-dam': {
             center: [-123.556690, 48.094970],
             zoom: 17,
-            speed: 1,
-            pitch: 40
+            speed: 2,
+            pitch: 40,
+            bearing: 0
         },
         'california': {
             bearing: 0,
             center: [-121.304350, 37.439437],
             zoom: 6,
-            speed: 1
+            speed: 2,
+            pitch: 40,
+            bearing: 0
         }
     };
 
